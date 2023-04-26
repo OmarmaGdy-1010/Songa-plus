@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Icon  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap" rel="stylesheet">
+
+        <!-- css file -->
+        <link href="stylsheet.css" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="32x32" href="image/favicon.png">
+
+        <title>Songa</title>
+
+    </head>
+
+    <body>
+        <audio id="audio" src=""></audio>
+        <div class="player">
+            <div class="top-bar">
+                <i class="fa-solid fa-music"></i>
+                <h1>Songa</h1>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="image">
+                <div class="width"><img src="image/img_1.jpg"></div>
+                <h3 class="artist">tamer hosny</h3>
+                <div class="parent">
+                    <h4 class="track-name">awlny Kalam awel mara </h4>
+                </div>
+            </div>
+            <div class="slider-time">
+                <input type="range" class="slider time-line">
+                <div class="time">
+                    <span class="current">00:00</span>
+                    <span class="duration">00:00</span>
+                </div>
+            </div>
+            <div class="slider-volume">
+                <div class="volume-icon up"><i class="fa-solid fa-volume-up"></i></div>
+                <input type="range" min="0" max="1" step="any" class="slider volume">
+            </div>
+            <div class="controls">
+                <button class="pre"><i class="fa-solid fa-backward"></i></button>
+                <button class="turn-on stoped"><i class="fa-solid fa-play"></i></button>
+                <button class="next"><i class="fa-solid fa-forward"></i></button>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+
+</html>
